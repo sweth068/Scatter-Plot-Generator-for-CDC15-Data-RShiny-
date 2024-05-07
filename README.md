@@ -4,9 +4,12 @@ Scatter Plot Generator for CDC15 Data (RShiny)
 
 About the Shiny App: Scatter Plot Generator for CDC15 Data
 
-This Shiny app is designed to create scatter plots using a subset of the CDC15 experiment data from a gene expression study. The app allows users to visualize the relationship between any two selected time points within the experiment. Here's what it does:
+This Shiny app is designed to create scatter plots using a subset of the CDC15 experiment data from a gene expression study. The app allows users to visualize the relationship between any two selected time points within the experiment. 
+
+Here's what it does:
 
 Data Input: The app reads data from a text file (spellman.txt) containing gene expression levels for various time points. The data file is expected to have a header row and row names, with the relevant data for the CDC15 experiment spanning columns 23 to 46.
+
 UI Design: The app provides a simple interface with sidebar controls for users to select the X and Y variables (corresponding to the desired time points) for plotting. Users can also choose the color for the scatter plot points from a predefined list of colors.
 
 Server Logic: The server-side script is responsible for handling user input, creating the data subset based on selected time points, and rendering the scatter plot accordingly. The scatter plot is drawn with user-specified X and Y variables, and the selected color for the points. If the user changes the selections, the plot updates dynamically.
